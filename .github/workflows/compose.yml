@@ -10,5 +10,5 @@ jobs:
       - uses: isbang/compose-action@v1.5.1
         with:
           compose-file: "./docker-compose.yml"
-        env:
-          CUSTOM_VARIABLE: "test"
+      - name: run tests
+        run: docker-compose up
